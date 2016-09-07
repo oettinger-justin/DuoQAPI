@@ -19,6 +19,7 @@ Create a hands-free timer experience for different in-game events.
  - After 20 minutes on game clock, announce that Baron Nasher has spawned.
  - Once the user reports Baron has been killed, start a 7 minute timer to the respawn.
  - Similarly, after the user reports taking Red Buff or Blue Buff, start a 5 minute timer.
+ - Start a 20:00 timer if Rift Herald has been taken.
 
 ### Challenges
 

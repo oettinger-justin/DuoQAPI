@@ -45,11 +45,6 @@ LolApi.Summoner.getByName('YOLO Swag 5ever')
 var search = process.argv[2];
 var search1 = process.argv[3];
 
-//Game Start Command//
-if (search === startgame){
-    
-}
-
 //Item Searches//
 
 LolApi.Static.getItemList({ itemListData: "gold" })
@@ -133,10 +128,3 @@ function removetags (s){ //removetags only works assuming that all tags have a c
     }
     return s;
 } */
-
-function NeutObjTimers (){
-    if (search === dragon){
-        console.log("Dragon has been taken. Starting timer for next spawn.");
-
-    }
-}
