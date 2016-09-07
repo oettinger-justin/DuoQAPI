@@ -97,3 +97,53 @@ if (search === "blue taken") {
         console.log("Blue Buff has spawned.");
     }
 }
+
+
+/* 
+    Timers format:
+    {
+        "%eventName%": Timer
+        ...
+    }
+*/
+
+/* 
+    Timer format:
+    {
+        starttime: number,
+        ocurrencecount: number
+    }
+    
+*/
+
+/*
+ * takeAThing: called whenever someone takes something (basically resetting the timer and increasing the timer ocurrencecount)
+ * @param string Thing that we've taken (same as %eventName% in the Timers object)
+ * @param Timers Timers object representing the game
+ * @return none
+ */
+function takeAThing(thing, timers) {
+    /* TODO */
+}
+
+/*
+ * getTimersFromStorage: gets the user's current timers
+ * @param: user Id
+ * @return Timers Timers object representing the game
+ */
+function getTimersFromStorage(userId) {
+    /* TODO */
+    return [];
+}
+
+/*
+ * getAlerts: tells us 
+ * @param Timers Timers object representing the game
+ * @return [string] Any alerts that should be read to the user
+ */
+function getAlerts(timers) {
+    let alerts = [];
+    /* TODO */
+    return alerts;
+}
+
