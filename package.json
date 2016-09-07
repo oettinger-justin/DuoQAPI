@@ -1,0 +1,30 @@
+{
+  "name": "alexaq",
+  "version": "1.0.0",
+  "description": "Hands-free Amazon Alexa-based companion for League of Legends.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oettinger-justin/DuoQAPI.git"
+  },
+  "keywords": [
+    "league",
+    "legends",
+    "api",
+    "alexa",
+    "amazon"
+  ],
+  "author": "Justin Oettinger",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oettinger-justin/DuoQAPI/issues"
+  },
+  "homepage": "https://github.com/oettinger-justin/DuoQAPI#readme",
+  "dependencies": {
+    "alexa-sdk": "^1.0.5",
+    "leagueapi": "^0.4.21"
+  }
+}
