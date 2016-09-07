@@ -8,19 +8,32 @@ This will be achieved by providing quick response information that is basic to t
  - The summary of the item's effect (i.e. in the case of Bloodthirster: something something deals damage heals you etc)
 
 ## In-Game Timers:
- - At start of game, starts a 2:30 timer to the first drake spawn, and a 19:45 countdown to the despawn of Rift Herald.
- - Also starts a running game clock, relevance explained later.
- - Upon killing a drake, start a 6 minute timer to the next spawn.
-  - Unless game clock will be over 35:00 at the time of the next spawn, at which point "Elder Dragon spawn" will be announced after the 6 minutes have elapsed.
+
+Create a hands-free timer experience for different in-game events.
+
+### Feature Components
+ - User tells Alexa start of game, starts a 2:30 timer to the first drake spawn, and a 19:45 countdown to the despawn of Rift Herald.
+ - User tells Alexa when Drake is killed, start a 6 minute timer to the next spawn.
+  - Unless game clock will be over 35:00 at the time of the next spawn, at which point "Elder Dragon spawn" will be announced.
   - All respawns after the first Elder Dragon take are all Elder Dragons, and will respawn 10 minutes after being killed.
  - After 20 minutes on game clock, announce that Baron Nasher has spawned.
- - Once Baron has been killed, start a 7 minute timer to the respawn.
- - Similarly, after taking Red Buff or Blue Buff, start a 5 minute timer.
+ - Once the user reports Baron has been killed, start a 7 minute timer to the respawn.
+ - Similarly, after the user reports taking Red Buff or Blue Buff, start a 5 minute timer.
+
+### Challenges
+
+ - [We can't have Alexa spontaneously start talking](https://www.reddit.com/r/amazonecho/comments/4cn84i/spoken_reminders_alarms/?st=isse7i5n&sh=f804a75f). We might be able to leverage alarms to do a similar thing.
 
 ## Counterpicks and Winrates:
+
+Allow the user to query game analytics for hands-free intelligence to help decision-making.
+
+### Feature Components
  - Using the past month of aggregate match data, provides:
   - The winrate for a champion of choice, potentially broken down by ranked level.
   - The top three champions with the highest winrate against a given champion, again potentially
                 broken down by rank.
 
-All of this will be done using the information provided through the Riot League of Legends API, and using the npm files of "leagueapi"
+### Challenges
+
+ - This requires us to be able to run queries against an aggregate dataset. Unfortunately we can't pull this data out of the League API, so we might have to use some fancy statistics and random sampling to run these queries.
